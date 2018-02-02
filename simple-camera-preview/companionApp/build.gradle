@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.example.androidthings.doorbell"
+        minSdkVersion 26
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //implementation 'com.google.firebase:firebase-core:11.4.2'
+    //implementation 'com.google.firebase:firebase-database:11.4.2'
+    //implementation 'com.firebaseui:firebase-ui-database:0.5.3'
+    implementation 'com.android.support:recyclerview-v7:25.0.1'
+    implementation 'com.android.support:appcompat-v7:25.0.1'
+}
+
+//apply plugin: 'com.google.gms.google-services'
